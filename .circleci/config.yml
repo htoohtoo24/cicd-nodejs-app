@@ -12,10 +12,10 @@ jobs:
           pkg-manager: yarn
       - run:
           command: yarn install
-          name: Run install
+          name: Run install test
       - run:
           command: yarn build
-          name: Build app
+          name: Build app test
       - persist_to_workspace:
           root: ~/project
           paths:
